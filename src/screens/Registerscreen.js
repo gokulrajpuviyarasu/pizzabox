@@ -3,7 +3,7 @@ import {useDispatch , useSelector} from 'react-redux'
 import {registerUser} from "../actions/userAction" ;
 export default function Registerscreen() {
   const [name, setname] = useState("");
-  const [Email, setemail] = useState("");
+  const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
   const [cpassword, setcpassword] = useState("");
 
@@ -15,7 +15,7 @@ export default function Registerscreen() {
     } else {
       const user = {
         name,
-        Email,
+        email,
         password,
       };
       console.log(user);
@@ -43,7 +43,7 @@ export default function Registerscreen() {
               type="text"
               placeholder="Email"
               className="form-control"
-              value={Email}
+              value={email}
               onChange={(e) => {
                 setemail(e.target.value);
               }}
