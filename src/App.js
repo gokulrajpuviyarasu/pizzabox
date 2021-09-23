@@ -5,6 +5,9 @@ import {BrowserRouter , Route , Link , Switch} from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Homescreen from './screens/Homescreen';
 import Cartscreen from './screens/Cartscreen';
+import Registerscreen from './screens/Registerscreen';
+import Loginscreen from './screens/Loginscreen';
+
 
 function App() {
   return (
@@ -15,7 +18,8 @@ function App() {
      
      <Route path ="/" exact component ={Homescreen}/>
      <Route path ="/cart" exact component ={Cartscreen}/>
-
+     <Route path ="/register" exact component ={Registerscreen}/>
+     <Route path ="/login" exact component ={Loginscreen}/>
 
       </BrowserRouter>
 
